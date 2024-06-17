@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Morii</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="image/png" href="imgs/lens_favicon.png"/>
+    </head>
+    <body onload="Drop()">
+        <h1>Morii <span id="define">(noun) - The desire to capture a fleeting experience.</span></h1>
+        <div class="sections">
+            <ul>
+                <li><a href="">Morii</a></li>
+                <li>
+                    <a href="javascript:void(0)" onclick="Drop(event)"> Snaps </a>
+                    <ul class="list">
+                        <li><a href="./pages/japan.html">Japan</a></li>
+                        <li><a href="./pages/parks.html">National Parks</a></li>
+                        <li><a href="./pages/nyc.html">New York City</a></li>
+                        <li><a href="./pages/astro.html">Astrophotography</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" onclick="Drop(event)">Photography 101</a>
+                    <ul class="list">
+                        <li><a href="./pages/specs.html">Specs</a></li>
+                        <li><a href="./pages/light.html">Light</a></li>
+                        <li><a href="./pages/composition.html">Composition/ Color Theory</a></li>
+                        <li><a href="./pages/editing.html">Editing</a></li>
+                    </ul>
+                </li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="./pages/inspirations.html">Inspirations</a></li>
+            </ul>
+            <a href="mailto:rahimhussain95@gmail.com" type="button" class="btn btn-dark" ;" style="margin-left: 20px;">Contact Me</button></a>
+        </div>
+        <div class="container" id = "topic" style="background-color: #323a40; color: white;">
+            <p>Morii, stemming from the amalgamation of mememto mori-a reminder of mortality- and torii-the Japanese gate signifying the boundary between the spiritual world and ours.</p>
+            <p>
+            Time is short and fleeting, the vast beauty of the world and the moments we experience mold us into who we are. Often we forget these moments, left only with the emotions and the memories left to a fading mirage. Through photography we are able to immortalize these memories, capture these moments that otherwise would be long forgotten.
+            We are all unique and vastly different, from the food we eat, the culture we celebrate, and the way in which we interact with our communities. And yet we often forget we share the desire to pursue the same happiness and preserve memories we cherish. 
+            The lens serves as a gateway, attempting to encapsulate our ever differing lives while allowing us a glimpse into the same spiritual desires we all share.
+            <iframe style="display: block; margin-left: auto; margin-right: auto;" width="560" height="315" src="https://www.youtube.com/embed/1asBOCAmgaw?si=ASd1tMXw0_HcJ6eL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </p>
+            <p>
+            Long ago, I saw a video over a ficitious word that attempted to capture a certain feeling. The feeling that our lives are fleeting, that there will come a time while running towards the future we will be chasing the past, yearning for the moments that culminate into our most cherished memories. Never had I heard of word that so perfectly was able to articulate this feeling i've so long and chased. A feeling that invokes a certain kind of sorrow while emanating a sense of gratitude, an appreciate that this moment happened. 
+            </p>
+            <p>
+            We are all so different, and yet at our core, we are all much too similar. My goal is to bridge this gap, to give others insight on the diverging paths of a now interconnected world. To show that despite the paths our journey may take, we all hope to reach the same destination. To be happy, to love, and to be loved. To capture those moments we so painfully yearn for.
+            </p>
+            <p>
+            To capture the feeling, Morii.
+            </p>
+        </div>
+
+        <script>
+            function Drop() {
+                let dropper = event.target.nextElementSibling;
+                if (dropper.classList.contains ('open'))
+                {
+                    dropper.classList.remove('open');
+                }
+                else
+                {
+                    dropper.classList.add('open');
+                }
+            }
+        </script>
+    </body>
+</html>

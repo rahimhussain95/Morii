@@ -1,0 +1,75 @@
+body {
+    background-color: gainsboro;
+}
+h1 {
+    font-family: "Brush Script MT", cursive;
+    margin-left: 20px;
+    font-size: 75px;
+    border-bottom: .2px solid rgb(188, 186, 186);
+}
+
+#define {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+div.sections {
+    min-height: 120px;
+    width: 180px;
+    margin-top: px;
+    overflow: hidden;
+}
+
+div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+div#topic {
+    margin: 20px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.pic {
+    width: auto;
+    height: 400px;
+    margin: 5px;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 1px 4px;
+}
+
+ul li {
+    padding: 15px 0px;
+    margin: 5px;
+    border-bottom: .5px solid rgb(177, 175, 175);
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(39, 38, 38);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.list {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+
+.list.open {
+    max-height: 400px;
+    opacity: 1;
+}
+
+#album {
+    font-size: 25px;
+    font-family: cursive;
+    margin-left: 300px;
+}
